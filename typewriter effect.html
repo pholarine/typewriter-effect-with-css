@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typewriter</title>
+    <style>
+        body{margin-top: 50vh; overflow: hidden;}
+        .line{
+            position: relative;
+            width: 20ch;
+            margin: 0px auto;
+            border-right: 2px solid black;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            font-size: 8vw;
+            font-family: monospace;
+        
+        }
+        
+        .anim-typewriter{
+            animation: typewriter 3s steps(26) 1s 1  normal both,
+            blink 500ms steps(20) 15 normal both;
+        }
+        
+        @keyframes typewriter {
+            0%{width: 0ch}
+            100%{width: 90vw}
+            
+        }
+        
+        @keyframes blink{
+            0%{ border-right-color: black}
+            100%{border-right-color: transparent}
+        }
+        </style>
+</head>
+<body>
+    <p class="line anim-typewriter">Hello, I am Folarin.</p>
+</body>
+</html>
+
+

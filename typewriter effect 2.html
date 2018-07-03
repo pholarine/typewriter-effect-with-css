@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body{margin: 0px; padding: 0px;}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    right: 20%;
+    width:63vw;
+    position: absolute;
+    top: 40%;    
+}
+
+.line{
+    width: 38ch;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2vw;
+    font-family: monospace;
+    border-right: 2px solid white;
+    color: rgba(255, 255, 255, 0.9);
+    animation: typewriter 10s steps(40) 1s 1  normal both,
+    blink 500ms steps(20) 20 normal both;
+}
+      
+.line2{
+    width: 51ch;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2vw;
+    font-family: monospace;
+    border-right: 2px solid white;
+    color: rgba(255, 255, 255, 0.9);
+    animation: typewriter2 4s steps(53) 10s 1  normal both,
+    blink2 500ms steps(50) 20 10s normal both;
+}
+
+/*----------------KEYFRAMES---------------*/
+
+@keyframes typewriter2 {
+    0%{width: 0ch}
+    100%{width: 51ch}    
+}
+
+@keyframes blink2{
+    0%{ border-right-color: transparent}
+    1%{border-right-color: white}
+    99%{border-right-color: white}
+    100%{border-right: transparent}
+}
+
+
+@keyframes typewriter {
+    0%{width: 0ch}
+    45%{width: 40ch}
+    56%{width: 40ch}
+    75%{width: 5ch}
+    100%{width: 5ch}    
+}
+
+@keyframes blink{
+    0%{ border-right-color: white}
+    100%{border-right-color: transparent}
+}
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <div class="container">
+            <p class="line anim-typewriter">I am an Electrical Engineer &amp; Physicist</p>
+            <p class="line2 anim-typewriter2">an Intermediate Web developer &amp; Graphics Designer.</p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
